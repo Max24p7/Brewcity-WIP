@@ -1,0 +1,81 @@
+:root {
+     --main: skyblue;
+     --sec: gold;
+     --white: #eee;
+     --bgcolor: #333;
+     --gray: #666;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bgcolor);
+    color: var(--white);
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+    font-size: 1rem;
+  }
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+/*
+=============== 
+Nav
+===============
+*/
+nav {
+    background: var(--gray);
+    height: 3rem;
+    display: grid;
+    align-items: center;
+    box-shadow: var(--white);
+  }
+  .nav-center {
+    width: 90vw;
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-center h4 {
+    color: var(--sec);
+    margin-bottom: 0;
+  }
+  .nav-links {
+    display: flex;
+  }
+  nav a {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--sec);
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    margin-right: 1rem;
+  }
+  nav a:hover {
+    color: var(--white);
+  }
