@@ -1,9 +1,9 @@
 :root {
-     --main: skyblue;
-     --sec: gold;
+     --main: rgb(177, 233, 255);
+     --sec: rgb(251, 255, 145);
      --white: #eee;
-     --bgcolor: #333;
-     --gray: #666;
+     --bgcolor: #121212;
+     --gray: #222;
 }
 
 *,
@@ -14,27 +14,26 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
+    margin: 0 0 100px;
     background-color: var(--bgcolor);
     color: var(--white);
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.875rem;
-    line-height: 1.5;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  letter-spacing: 0.1rem;
+  letter-spacing: .5rem;
   text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
 }
-
-h4 {
-    font-size: 1rem;
-  }
 
 p {
     margin-bottom: 1.25rem;
@@ -47,30 +46,27 @@ Nav
 */
 nav {
     background: var(--gray);
-    height: 3rem;
+    height: 3.5rem;
     display: grid;
     align-items: center;
-    box-shadow: var(--white);
   }
   .nav-center {
-    width: 90vw;
-    max-width: 620px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .nav-center h4 {
+  .nav-center h1 {
     color: var(--sec);
+    margin-left: 1rem;
     margin-bottom: 0;
+    font-size: 40px;
   }
   .nav-links {
     display: flex;
   }
   nav a {
     text-transform: capitalize;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 24px;
     color: var(--sec);
     text-decoration: none;
     letter-spacing: 0.1rem;
@@ -78,4 +74,49 @@ nav {
   }
   nav a:hover {
     color: var(--white);
+  }
+  .contact-link {
+    border: 1px solid var(--sec);
+    border-radius: 5px;
+    color: black;
+    background-color: var(--sec);
+  }
+
+  /* Main content */
+
+  main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: sans-serif;
+  }
+
+  section li {
+    list-style-type: none;
+  }
+
+  /* Footer */
+
+  footer {
+    font-family: sans-serif;
+    background-color: var(--gray);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    height: 3rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #footer-text {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--main);
+  }
+
+  .social-links {
+    display: flex;
+    position: relative;
   }
